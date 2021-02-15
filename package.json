@@ -1,0 +1,27 @@
+{
+  "name": "node-js-basics",
+  "version": "1.0.0",
+  "description": "Node JS training project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobkir/Node-JS-basics.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "js"
+  ],
+  "author": "Pavel Kirillov <p.kirillov2020@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobkir/Node-JS-basics/issues"
+  },
+  "homepage": "https://github.com/dobkir/Node-JS-basics#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
