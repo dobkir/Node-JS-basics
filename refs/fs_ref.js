@@ -15,6 +15,7 @@ const path = require('path');
 //     if (err) throw err;
 //     console.log('File has been created');
 
+
 //     fs.appendFile(
 //       path.join(__dirname, 'notes', 'mynotes.txt'),
 //       ' From append file',
@@ -41,11 +42,16 @@ const path = require('path');
 //     console.log(Buffer.from(data).toString());
 //   });
 
-fs.rename(
-  path.join(__dirname, 'notes', 'mynotes.txt'),
-  path.join(__dirname, 'notes', 'notes.txt'),
-  err => {
-    if (err) throw err;
-    console.log('File has been renamed');
-  }
-);
+// fs.rename(
+//   path.join(__dirname, 'notes', 'mynotes.txt'),
+//   path.join(__dirname, 'notes', 'notes.txt'),
+//   err => {
+//     if (err) throw err;
+//     console.log('File has been renamed');
+//   }
+// );
+
+fs.rm('mynotes.txt', (err) => {
+  if (err) throw err;
+  console.log('File has been removed');
+});
