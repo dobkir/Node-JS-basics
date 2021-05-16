@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const expressHandlebars = require('express-handlebars');
 
 const homeRoutes = require('./routes/home');
@@ -21,7 +20,9 @@ app.set('view engine', 'hbs');
 app.set('views', 'views');
 // add static directory
 app.use(express.static('public'));
-
+// apply new middlewear
+app.use(express.urlencoded({ extended: true }));
+// routes registration
 app.use('/', homeRoutes);
 app.use('/courses', coursesRoutes);
 app.use('/add', addRoutes);
