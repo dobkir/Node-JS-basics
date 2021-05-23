@@ -22,7 +22,7 @@ class Course {
   static async update(course) {
     const courses = await Course.getAll();
 
-    const idx = courses.findIndex(c => c.id === course.id);
+    const idx = courses.findIndex(c => c.id === c.id);
     courses[idx] = course;
 
     return new Promise((resolve, reject) => {
@@ -77,7 +77,7 @@ class Course {
 
   static async getById(id) {
     const courses = await Course.getAll();
-    return courses.find(c => c.id === id);
+    return courses.find(course => course.id === id);
   }
 
 }
