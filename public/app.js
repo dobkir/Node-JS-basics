@@ -30,7 +30,7 @@ if ($card) {
                 </td>
               <tr>
               `;
-            }).join('')
+            }).join('');
             $card.querySelector('tbody').innerHTML = html;
             $card.querySelector('.price').textContent = toCurrency(card.price);
           } else {
